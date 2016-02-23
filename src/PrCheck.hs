@@ -13,5 +13,6 @@ someFunc = do
     pulls <- pullRequestsFor "aslatter" "parsec"
     case pulls of
         (Left error) -> putStrLn "Error"
-        (Right pullRequests) ->
-             print . V.head $ pullRequests
+        (Right pullRequests) -> do
+             putStrLn "These are the pull requests:"
+             mapM_ print pullRequests
