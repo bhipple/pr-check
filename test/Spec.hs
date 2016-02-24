@@ -1,4 +1,8 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 import PrCheck
 
 main :: IO ()
-main = someFunc
+main = do
+    someFunc
+    orgRepoNames "haskell"
