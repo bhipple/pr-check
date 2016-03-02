@@ -3,4 +3,4 @@ module Main where
 import PrCheck
 
 main :: IO ()
-main = someFunc
+main = putStrLn "Need to implement main."
